@@ -1,3 +1,3 @@
 # terraLab
 
-###This repository is for learning hands on based on terraform
+## This repository is for learning hands on based on terraform
