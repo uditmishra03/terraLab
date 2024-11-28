@@ -12,6 +12,7 @@ resource "aws_instance" "instance_1" {
 
 resource "aws_s3_bucket" "s3_bucket" {
     bucket ="terralab-day4-28112024-2239"
+    force_destroy = true
   
 }
 
