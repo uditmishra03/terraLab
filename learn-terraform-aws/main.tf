@@ -1,6 +1,6 @@
 # Configure the AWS Provider
 provider "aws" {
-  region = "us-east-1"
+  region = var.region
 }
 
 # Data source to get the latest Ubuntu AMI
@@ -18,7 +18,7 @@ data "aws_ami" "ubuntu" {
 # Create EC2 instance
 resource "aws_instance" "app_server" {
   ami           = data.aws_ami.ubuntu.id
-  instance_type = "t2.micro"
+  instance_type = var.instance_type
 
   tags = {
     Name        = "learn-terraform"
