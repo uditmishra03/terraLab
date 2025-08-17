@@ -1,0 +1,1 @@
+bucket_name = "lab-s3-lambda-trigger-"
