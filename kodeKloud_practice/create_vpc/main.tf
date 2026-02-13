@@ -5,4 +5,3 @@ resource "aws_vpc" "datacenter-vpc" {
     Name = "datacenter-vpc"
   }
 }
-
